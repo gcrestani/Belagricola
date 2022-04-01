@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Belagricola_02_insertion_sort/1.0.0": {
+        "runtime": {
+          "Belagricola_02_insertion_sort.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Belagricola_02_insertion_sort/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

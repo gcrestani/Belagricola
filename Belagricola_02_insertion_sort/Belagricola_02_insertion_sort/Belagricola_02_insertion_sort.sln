@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Belagricola_02_insertion_sort", "Belagricola_02_insertion_sort.csproj", "{4C3FBADB-5936-4D3A-B81E-71E50F7572AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C3FBADB-5936-4D3A-B81E-71E50F7572AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C3FBADB-5936-4D3A-B81E-71E50F7572AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C3FBADB-5936-4D3A-B81E-71E50F7572AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C3FBADB-5936-4D3A-B81E-71E50F7572AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5BFA9379-7E83-46C0-96EE-B074C7CEFF7C}
+	EndGlobalSection
+EndGlobal
