@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Belagricola_03_caixa_eletronico/1.0.0": {
+        "runtime": {
+          "Belagricola_03_caixa_eletronico.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Belagricola_03_caixa_eletronico/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

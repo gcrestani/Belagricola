@@ -1,0 +1,13 @@
+D:\Curso CSharp\Belagricola\Belagricola_03_caixa_eletronico\bin\Debug\netcoreapp3.1\Belagricola_03_caixa_eletronico.exe
+D:\Curso CSharp\Belagricola\Belagricola_03_caixa_eletronico\bin\Debug\netcoreapp3.1\Belagricola_03_caixa_eletronico.deps.json
+D:\Curso CSharp\Belagricola\Belagricola_03_caixa_eletronico\bin\Debug\netcoreapp3.1\Belagricola_03_caixa_eletronico.runtimeconfig.json
+D:\Curso CSharp\Belagricola\Belagricola_03_caixa_eletronico\bin\Debug\netcoreapp3.1\Belagricola_03_caixa_eletronico.runtimeconfig.dev.json
+D:\Curso CSharp\Belagricola\Belagricola_03_caixa_eletronico\bin\Debug\netcoreapp3.1\Belagricola_03_caixa_eletronico.dll
+D:\Curso CSharp\Belagricola\Belagricola_03_caixa_eletronico\bin\Debug\netcoreapp3.1\Belagricola_03_caixa_eletronico.pdb
+D:\Curso CSharp\Belagricola\Belagricola_03_caixa_eletronico\obj\Debug\netcoreapp3.1\Belagricola_03_caixa_eletronico.csprojAssemblyReference.cache
+D:\Curso CSharp\Belagricola\Belagricola_03_caixa_eletronico\obj\Debug\netcoreapp3.1\Belagricola_03_caixa_eletronico.AssemblyInfoInputs.cache
+D:\Curso CSharp\Belagricola\Belagricola_03_caixa_eletronico\obj\Debug\netcoreapp3.1\Belagricola_03_caixa_eletronico.AssemblyInfo.cs
+D:\Curso CSharp\Belagricola\Belagricola_03_caixa_eletronico\obj\Debug\netcoreapp3.1\Belagricola_03_caixa_eletronico.csproj.CoreCompileInputs.cache
+D:\Curso CSharp\Belagricola\Belagricola_03_caixa_eletronico\obj\Debug\netcoreapp3.1\Belagricola_03_caixa_eletronico.dll
+D:\Curso CSharp\Belagricola\Belagricola_03_caixa_eletronico\obj\Debug\netcoreapp3.1\Belagricola_03_caixa_eletronico.pdb
+D:\Curso CSharp\Belagricola\Belagricola_03_caixa_eletronico\obj\Debug\netcoreapp3.1\Belagricola_03_caixa_eletronico.genruntimeconfig.cache
