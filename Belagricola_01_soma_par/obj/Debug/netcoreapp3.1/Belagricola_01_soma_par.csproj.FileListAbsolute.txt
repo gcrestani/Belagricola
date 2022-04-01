@@ -1,0 +1,13 @@
+D:\Curso CSharp\Belagricola\Belagricola_01_soma_par\bin\Debug\netcoreapp3.1\Belagricola_01_soma_par.exe
+D:\Curso CSharp\Belagricola\Belagricola_01_soma_par\bin\Debug\netcoreapp3.1\Belagricola_01_soma_par.deps.json
+D:\Curso CSharp\Belagricola\Belagricola_01_soma_par\bin\Debug\netcoreapp3.1\Belagricola_01_soma_par.runtimeconfig.json
+D:\Curso CSharp\Belagricola\Belagricola_01_soma_par\bin\Debug\netcoreapp3.1\Belagricola_01_soma_par.runtimeconfig.dev.json
+D:\Curso CSharp\Belagricola\Belagricola_01_soma_par\bin\Debug\netcoreapp3.1\Belagricola_01_soma_par.dll
+D:\Curso CSharp\Belagricola\Belagricola_01_soma_par\bin\Debug\netcoreapp3.1\Belagricola_01_soma_par.pdb
+D:\Curso CSharp\Belagricola\Belagricola_01_soma_par\obj\Debug\netcoreapp3.1\Belagricola_01_soma_par.csprojAssemblyReference.cache
+D:\Curso CSharp\Belagricola\Belagricola_01_soma_par\obj\Debug\netcoreapp3.1\Belagricola_01_soma_par.AssemblyInfoInputs.cache
+D:\Curso CSharp\Belagricola\Belagricola_01_soma_par\obj\Debug\netcoreapp3.1\Belagricola_01_soma_par.AssemblyInfo.cs
+D:\Curso CSharp\Belagricola\Belagricola_01_soma_par\obj\Debug\netcoreapp3.1\Belagricola_01_soma_par.csproj.CoreCompileInputs.cache
+D:\Curso CSharp\Belagricola\Belagricola_01_soma_par\obj\Debug\netcoreapp3.1\Belagricola_01_soma_par.dll
+D:\Curso CSharp\Belagricola\Belagricola_01_soma_par\obj\Debug\netcoreapp3.1\Belagricola_01_soma_par.pdb
+D:\Curso CSharp\Belagricola\Belagricola_01_soma_par\obj\Debug\netcoreapp3.1\Belagricola_01_soma_par.genruntimeconfig.cache
