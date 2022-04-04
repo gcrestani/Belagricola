@@ -3,14 +3,16 @@ using System;
 using BelagricolaMVC.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BelagricolaMVC.Migrations
 {
     [DbContext(typeof(BelagricolaMVCContext))]
-    partial class BelagricolaMVCContextModelSnapshot : ModelSnapshot
+    [Migration("20220404023313_ChavesEstrangeiras")]
+    partial class ChavesEstrangeiras
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

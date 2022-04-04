@@ -10,6 +10,7 @@ namespace BelagricolaMVC.Models
         public int Id { get; set; }
         public string Tel { get; set; }
         public Contato Contato { get; set; }
+        public int ContatoId { get; set; }
 
         public Telefone()
         {

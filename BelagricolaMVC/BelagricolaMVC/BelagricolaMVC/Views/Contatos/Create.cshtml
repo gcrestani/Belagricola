@@ -1,37 +1,42 @@
-﻿@model BelagricolaMVC.Models.Contato
+﻿@model BelagricolaMVC.Models.ViewModel.ContatoFormViewModel
 
 @{
     ViewData["Title"] = "Create";
 }
 
-<h2>Create</h2>
+<h2>Adicionar Contato</h2>
 
-<h4>Contato</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Nome" class="control-label"></label>
-                <input asp-for="Nome" class="form-control" />
-                <span asp-validation-for="Nome" class="text-danger"></span>
+                <label asp-for="Contato.Nome" class="control-label"></label>
+                <input asp-for="Contato.Nome" class="form-control" />
+                <span asp-validation-for="Contato.Nome" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Relacionamento" class="control-label"></label>
-                <input asp-for="Relacionamento" class="form-control" />
-                <span asp-validation-for="Relacionamento" class="text-danger"></span>
+                <label asp-for="Contato.Relacionamento" class="control-label"></label>
+                <input asp-for="Contato.Relacionamento" class="form-control" />
+                <span asp-validation-for="Contato.Relacionamento" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <label asp-for="Contato.ClienteId" class="control-label">Cliente</label>
+                <select asp-for="Contato.ClienteId"
+                        asp-items="@(new SelectList(Model.Cliente,"Id","Nome"))"
+                        class="form-control">
+
+                </select>
+            </div>
+            <div class="form-group">
+                <a asp-action="Index" class="btn">Cancelar</a>
+                <input type="submit" value="Adicionar" class="btn btn-success" />
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

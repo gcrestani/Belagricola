@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BelagricolaMVC.Data;
 using BelagricolaMVC.Models;
+using BelagricolaMVC.Models.ViewModel;
 
 namespace BelagricolaMVC.Controllers
 {
@@ -22,7 +23,8 @@ namespace BelagricolaMVC.Controllers
         // GET: Telefones
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Telefone.ToListAsync());
+            return RedirectToAction("Index","Contatos");
+            //return View(await _context.Telefone.ToListAsync());
         }
 
         // GET: Telefones/Details/5
@@ -44,17 +46,28 @@ namespace BelagricolaMVC.Controllers
         }
 
         // GET: Telefones/Create
-        public IActionResult Create()
+        public IActionResult Create(int? id)
         {
+            if (id != null)
+            {
+                Contato contato = new Contato();
+                contato = _context.Contato.First(x => x.Id == id);
+                TelefoneFormViewModel telefoneFormViewModel = new TelefoneFormViewModel();
+                telefoneFormViewModel.Contato = contato;
+                telefoneFormViewModel.telefone = new Telefone();
+                telefoneFormViewModel.telefone.ContatoId = contato.Id;
+                return View(telefoneFormViewModel);
+            }
             return View();
         }
+
 
         // POST: Telefones/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Tel")] Telefone telefone)
+        public async Task<IActionResult> Create([Bind("Id,Tel,ContatoId")] Telefone telefone)
         {
             if (ModelState.IsValid)
             {
@@ -68,6 +81,7 @@ namespace BelagricolaMVC.Controllers
         // GET: Telefones/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+
             if (id == null)
             {
                 return NotFound();
@@ -86,7 +100,7 @@ namespace BelagricolaMVC.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Tel")] Telefone telefone)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Tel,ContatoId")] Telefone telefone)
         {
             if (id != telefone.Id)
             {
@@ -97,6 +111,8 @@ namespace BelagricolaMVC.Controllers
             {
                 try
                 {
+                    telefone.Contato = _context.Contato.FirstOrDefault();
+                    telefone.ContatoId = 1;
                     _context.Update(telefone);
                     await _context.SaveChangesAsync();
                 }
@@ -148,6 +164,22 @@ namespace BelagricolaMVC.Controllers
         private bool TelefoneExists(int id)
         {
             return _context.Telefone.Any(e => e.Id == id);
+        }
+
+        public List<Telefone> FindByIdContato(int? idContato)
+        {
+            if (idContato == null)
+            {
+                return null;
+            }
+            List<Telefone> telefones = new List<Telefone>();
+            telefones = _context.Telefone.ToList();
+            telefones = telefones.FindAll(x => x.ContatoId == idContato);
+            if (telefones == null)
+            {
+                return null;
+            }
+            return telefones;
         }
     }
 }

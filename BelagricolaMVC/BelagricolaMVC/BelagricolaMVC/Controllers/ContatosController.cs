@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BelagricolaMVC.Data;
 using BelagricolaMVC.Models;
+using BelagricolaMVC.Models.ViewModel;
 
 namespace BelagricolaMVC.Controllers
 {
@@ -22,12 +23,23 @@ namespace BelagricolaMVC.Controllers
         // GET: Contatos
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Contato.ToListAsync());
+            ClientesController cliente = new ClientesController(_context);
+            TelefonesController telefone = new TelefonesController(_context);
+
+            List<Contato> contato = _context.Contato.ToList();
+
+            foreach (var cont in contato)
+            {
+                cont.Cliente = cliente.FindById(cont.ClienteId);
+                cont.ListaTelefones = telefone.FindByIdContato(cont.Id);
+            }
+            return View(contato);
         }
 
         // GET: Contatos/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+
             if (id == null)
             {
                 return NotFound();
@@ -46,7 +58,10 @@ namespace BelagricolaMVC.Controllers
         // GET: Contatos/Create
         public IActionResult Create()
         {
-            return View();
+            ClientesController cli = new ClientesController(_context);
+            var clientes = cli.FindAll();
+            var viewModel = new ContatoFormViewModel { Cliente = clientes };
+            return View(viewModel);
         }
 
         // POST: Contatos/Create
@@ -54,7 +69,7 @@ namespace BelagricolaMVC.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Relacionamento")] Contato contato)
+        public async Task<IActionResult> Create([Bind("Id,Nome,Relacionamento,ClienteId")] Contato contato)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +101,7 @@ namespace BelagricolaMVC.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Relacionamento")] Contato contato)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Relacionamento,ClienteId")] Contato contato)
         {
             if (id != contato.Id)
             {

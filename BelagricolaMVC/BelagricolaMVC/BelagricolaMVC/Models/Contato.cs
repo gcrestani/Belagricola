@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -9,9 +10,11 @@ namespace BelagricolaMVC.Models
     {
         public int Id { get; set; }
         public string Nome { get; set; }
+        [Display(Name = "Lista de Telefones\n(clique para editar)")]
         public ICollection<Telefone> ListaTelefones { get; set; } = new List<Telefone>();
         public string Relacionamento { get; set; }
         public Cliente Cliente { get; set; }
+        public int ClienteId { get; set; }
 
         public Contato()
         {

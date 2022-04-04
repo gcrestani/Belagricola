@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -12,7 +13,9 @@ namespace BelagricolaMVC.Models
         public string Email { get; set; }
         public string RG { get; set; }
         public string CPF { get; set; }
+        [DataType(DataType.Date)]
         public DateTime Nascimento { get; set; }
+        [Display(Name="Observações")]
         public string Obs { get; set; }
         public ICollection<Contato> Contatos { get; set; } = new List<Contato>();
 

@@ -16,10 +16,6 @@ D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Deb
 D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Debug\netcoreapp2.1\BelagricolaMVC.TagHelpers.input.cache
 D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Debug\netcoreapp2.1\BelagricolaMVC.TagHelpers.output.cache
 D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Debug\netcoreapp2.1\BelagricolaMVC.RazorCoreGenerate.cache
-D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
-D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
-D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
-D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
 D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
 D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs

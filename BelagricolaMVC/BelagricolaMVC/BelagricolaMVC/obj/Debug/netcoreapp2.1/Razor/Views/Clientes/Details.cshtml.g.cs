@@ -184,7 +184,7 @@ using BelagricolaMVC.Models;
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(1198, 54, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "89ecb8dafcfe4f3fa4be80f9636ea7de", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c0c6f1fa1abd49ddbcf665a223d47cf9", async() => {
                 BeginContext(1244, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -219,7 +219,7 @@ using BelagricolaMVC.Models;
             WriteLiteral(" |\r\n    ");
             EndContext();
             BeginContext(1260, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e29a7cbcb09c447c92f58e95c6ecf5df", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8170cd8fa1504ac2855adc2c780a2c97", async() => {
                 BeginContext(1282, 12, true);
                 WriteLiteral("Back to List");
                 EndContext();

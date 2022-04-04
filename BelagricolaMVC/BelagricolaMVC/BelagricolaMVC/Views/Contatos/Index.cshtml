@@ -4,11 +4,9 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Index</h2>
+<h2>Contatos</h2>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+
 <table class="table">
     <thead>
         <tr>
@@ -18,7 +16,13 @@
             <th>
                 @Html.DisplayNameFor(model => model.Relacionamento)
             </th>
-            <th></th>
+            <th>
+                Cliente
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ListaTelefones)
+            </th>
+            <th>Ações</th>
         </tr>
     </thead>
     <tbody>
@@ -31,11 +35,28 @@
                 @Html.DisplayFor(modelItem => item.Relacionamento)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                @Html.DisplayFor(modelItem => item.Cliente.Nome)
+            </td>
+            <td>
+
+                @foreach (var tel in item.ListaTelefones)
+                {
+                    @Html.Raw("<a class=\"badge\" href=\"Telefones/Edit/")
+                    @tel.Id
+                    @Html.Raw("\">");
+                    @tel.Tel
+                    @Html.Raw("</a>&nbsp;")
+                }
+                <a class="badge" href="Telefones/Create/@item.Id">+</a>
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id"><b>Editar</b></a> |
+                <a asp-action="Delete" asp-route-id="@item.Id"><b>Excluir</b></a>
             </td>
         </tr>
 }
     </tbody>
 </table>
+<p>
+    <a class="btn btn-success" asp-action="Create">Adicionar</a>
+</p>

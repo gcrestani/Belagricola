@@ -149,5 +149,25 @@ namespace BelagricolaMVC.Controllers
         {
             return _context.Cliente.Any(e => e.Id == id);
         }
+
+        public List<Cliente> FindAll()
+        {
+            return _context.Cliente.OrderBy(x => x.Nome).ToList();
+        }
+
+        public Cliente FindById(int? id)
+        {
+            if (id == null)
+            {
+                return null;
+            }
+
+            var cliente = _context.Cliente.FirstOrDefault(m => m.Id == id);
+            if (cliente == null)
+            {
+                return null;
+            }
+            return cliente;
+        }
     }
 }
