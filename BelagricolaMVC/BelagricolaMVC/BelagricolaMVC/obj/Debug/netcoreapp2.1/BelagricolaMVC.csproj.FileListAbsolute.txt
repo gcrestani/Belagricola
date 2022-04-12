@@ -31,16 +31,13 @@ D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Deb
 D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Debug\netcoreapp2.1\BelagricolaMVC.csproj.CopyComplete
 D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Clientes\Create.cshtml.g.cs
 D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Clientes\Delete.cshtml.g.cs
-D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Clientes\Details.cshtml.g.cs
 D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Clientes\Edit.cshtml.g.cs
 D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Clientes\Index.cshtml.g.cs
 D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Contatos\Create.cshtml.g.cs
 D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Contatos\Delete.cshtml.g.cs
-D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Contatos\Details.cshtml.g.cs
 D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Contatos\Edit.cshtml.g.cs
 D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Contatos\Index.cshtml.g.cs
 D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Telefones\Create.cshtml.g.cs
 D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Telefones\Delete.cshtml.g.cs
-D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Telefones\Details.cshtml.g.cs
 D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Telefones\Edit.cshtml.g.cs
 D:\Curso CSharp\Belagricola\BelagricolaMVC\BelagricolaMVC\BelagricolaMVC\obj\Debug\netcoreapp2.1\Razor\Views\Telefones\Index.cshtml.g.cs

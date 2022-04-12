@@ -26,45 +26,33 @@ namespace BelagricolaMVC.Controllers
             return RedirectToAction("Index","Contatos");
             //return View(await _context.Telefone.ToListAsync());
         }
-
-        // GET: Telefones/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var telefone = await _context.Telefone
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (telefone == null)
-            {
-                return NotFound();
-            }
-
-            return View(telefone);
-        }
-
-        // GET: Telefones/Create
+     
+        // GET: Telefones/Create/{id do contato}
         public IActionResult Create(int? id)
         {
             if (id != null)
             {
                 Contato contato = new Contato();
-                contato = _context.Contato.First(x => x.Id == id);
+                try
+                {
+                    contato = _context.Contato.First(x => x.Id == id);
+                }
+                catch (Exception)
+                {
+                    return View("Error", new ErrorViewModel() { ErrorMessage = "Erro ao tentar inserir telefone de um contato inexistente." });
+
+                }
                 TelefoneFormViewModel telefoneFormViewModel = new TelefoneFormViewModel();
                 telefoneFormViewModel.Contato = contato;
                 telefoneFormViewModel.telefone = new Telefone();
                 telefoneFormViewModel.telefone.ContatoId = contato.Id;
                 return View(telefoneFormViewModel);
             }
-            return View();
+            return View("Error",new ErrorViewModel() { ErrorMessage = "Você deve selecionar um contato na página 'Contatos' para inserir um telefone." });
         }
 
 
         // POST: Telefones/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Tel,ContatoId")] Telefone telefone)
@@ -96,8 +84,6 @@ namespace BelagricolaMVC.Controllers
         }
 
         // POST: Telefones/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Tel,ContatoId")] Telefone telefone)

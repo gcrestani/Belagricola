@@ -34,39 +34,18 @@ namespace BelagricolaMVC.Controllers
                 cont.ListaTelefones = telefone.FindByIdContato(cont.Id);
             }
             return View(contato);
-        }
-
-        // GET: Contatos/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var contato = await _context.Contato
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (contato == null)
-            {
-                return NotFound();
-            }
-
-            return View(contato);
-        }
+        }     
 
         // GET: Contatos/Create
         public IActionResult Create()
         {
             ClientesController cli = new ClientesController(_context);
             var clientes = cli.FindAll();
-            var viewModel = new ContatoFormViewModel { Cliente = clientes };
+            var viewModel = new ContatoFormViewModel { Cliente = clientes, Contato = new Contato() };
             return View(viewModel);
         }
 
         // POST: Contatos/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Nome,Relacionamento,ClienteId")] Contato contato)
@@ -97,8 +76,6 @@ namespace BelagricolaMVC.Controllers
         }
 
         // POST: Contatos/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Relacionamento,ClienteId")] Contato contato)
