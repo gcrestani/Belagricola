@@ -202,7 +202,7 @@ WriteAttributeValue("", 1350, item.Id, 1350, 8, false);
             WriteLiteral(">+</a>\r\n            </td>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(1420, 62, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0d703b09074a48d9861de6ae2ef737bc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "73ecffe310544edb91907b16fe78a5f6", async() => {
                 BeginContext(1465, 13, true);
                 WriteLiteral("<b>Editar</b>");
                 EndContext();
@@ -237,7 +237,7 @@ WriteAttributeValue("", 1350, item.Id, 1350, 8, false);
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(1502, 65, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f2d75221c5ba453fb1b250230a5a19eb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "535c0a0da3644002b6fa0179b3ada9d4", async() => {
                 BeginContext(1549, 14, true);
                 WriteLiteral("<b>Excluir</b>");
                 EndContext();
@@ -280,7 +280,7 @@ WriteAttributeValue("", 1350, item.Id, 1350, 8, false);
             WriteLiteral("    </tbody>\r\n</table>\r\n<p>\r\n    ");
             EndContext();
             BeginContext(1639, 60, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "656caadf12ef4420905b75e8400708b5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "291b2a666d3942ad9a5f83af60cd4d37", async() => {
                 BeginContext(1686, 9, true);
                 WriteLiteral("Adicionar");
                 EndContext();

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BelagricolaMVC.Data;
 using BelagricolaMVC.Models;
+using System.Diagnostics;
 
 namespace BelagricolaMVC.Controllers
 {
@@ -51,13 +52,13 @@ namespace BelagricolaMVC.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { errorMessage = "Id do cliente não fornecido." });
             }
 
             var cliente = await _context.Cliente.FindAsync(id);
             if (cliente == null)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { errorMessage = "Id do cliente não encontrado." });
             }
             return View(cliente);
         }
@@ -69,7 +70,7 @@ namespace BelagricolaMVC.Controllers
         {
             if (id != cliente.Id)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { errorMessage = "Id do cliente não encontrado." });
             }
 
             if (ModelState.IsValid)
@@ -79,15 +80,15 @@ namespace BelagricolaMVC.Controllers
                     _context.Update(cliente);
                     await _context.SaveChangesAsync();
                 }
-                catch (DbUpdateConcurrencyException)
+                catch (DbUpdateConcurrencyException e)
                 {
                     if (!ClienteExists(cliente.Id))
                     {
-                        return NotFound();
+                        return RedirectToAction(nameof(Error), new { errorMessage = "O cliente não existe." });
                     }
                     else
                     {
-                        throw;
+                        return RedirectToAction(nameof(Error), new { errorMessage = "Erro ao salvar cliente. Id: "+ cliente.Id + Environment.NewLine + e.Message});
                     }
                 }
                 return RedirectToAction(nameof(Index));
@@ -100,14 +101,14 @@ namespace BelagricolaMVC.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { errorMessage = "Id não fornecido." });
             }
 
             var cliente = await _context.Cliente
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (cliente == null)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { errorMessage = "Cliente inexistente." });
             }
 
             return View(cliente);
@@ -119,9 +120,17 @@ namespace BelagricolaMVC.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var cliente = await _context.Cliente.FindAsync(id);
-            _context.Cliente.Remove(cliente);
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            if (cliente != null)
+            {
+                _context.Cliente.Remove(cliente);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                return RedirectToAction(nameof(Error), new { errorMessage = "Cliente inexistente. ID: " + id });
+            }
+            
         }
 
         private bool ClienteExists(int id)
@@ -147,6 +156,16 @@ namespace BelagricolaMVC.Controllers
                 return null;
             }
             return cliente;
+        }
+
+        public IActionResult Error (string errorMessage)
+        {
+            var viewModel = new ErrorViewModel
+            {
+                ErrorMessage = errorMessage,
+                RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier //pega o código da requisição            
+            };
+            return View(viewModel);
         }
     }
 }

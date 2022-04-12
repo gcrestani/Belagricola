@@ -94,7 +94,7 @@ using BelagricolaMVC.Models;
             WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(508, 62, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3aeb9af0ecef48c99651e97a818af09f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c119de9e1e92476fb2ff48c1c57885a9", async() => {
                 BeginContext(553, 13, true);
                 WriteLiteral("<b>Editar</b>");
                 EndContext();
@@ -129,7 +129,7 @@ using BelagricolaMVC.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(590, 65, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c7d03affaf59478ab103ae276af1f03f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad3c6314c4b24c7ab6d928b07c540f15", async() => {
                 BeginContext(637, 14, true);
                 WriteLiteral("<b>Excluir</b>");
                 EndContext();
@@ -172,7 +172,7 @@ using BelagricolaMVC.Models;
             WriteLiteral("    </tbody>\r\n</table>\r\n<p>\r\n    ");
             EndContext();
             BeginContext(727, 60, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "18450777c2c646749a2b69288d63b1fa", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bc1ce2144cc849e3a9678e6b734bfe3d", async() => {
                 BeginContext(774, 9, true);
                 WriteLiteral("Adicionar");
                 EndContext();
