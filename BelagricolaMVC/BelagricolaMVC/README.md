@@ -30,9 +30,6 @@ Antes rodar a API, utilize o comando abaixo no Visual Studio para executar as mi
     Update-database
 Após isso inicie o projeto normalmente (control + F5)
 
-### Vídeo explicativo:
-[Vídeo explicativo do projeto](https://www.loom.com/share/c96ac1c2a47944c0a03dbc2730429039)
-
 ## Construido com:
 
 -   [.Net Core Framework](https://dotnet.microsoft.com/download/dotnet-core)  - Free, cross-platform, open-source framework;
